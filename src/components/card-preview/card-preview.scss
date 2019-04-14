@@ -1,0 +1,16 @@
+.card-preview {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  background-color: #e1e4e7;
+}
+
+.card-preview__content {
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .card-preview  {
+    width: 100%;
+  }
+}

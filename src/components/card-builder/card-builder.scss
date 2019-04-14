@@ -1,0 +1,15 @@
+.card-builder {
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+}
+
+.card-builder__content {
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .card-builder  {
+    width: 100%;
+  }
+}
