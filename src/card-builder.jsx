@@ -3,6 +3,10 @@ import './card-builder.scss';
 import CardForm from './components/card-form/card-form'
 import CardPreview from './components/card-preview/card-preview'
 
+/*
+ * Internal state for the <CardBuilder /> component
+ *  file {String} - Avatar image file uploaded by the user
+*/
 class CardBuilder extends Component {
   constructor(props) {
   super(props);
@@ -14,12 +18,20 @@ class CardBuilder extends Component {
   this.handleUpload = this.handleUpload.bind(this);
 }
 
+/**
+ * @description handler to be called when user makes an input in the form
+ */
 handleChange(event) {
   if (event.target) {
     this.setState({[event.target.name]: event.target.value});
   }
 }
 
+/**
+ * @description handler to be called when user clicks 'Upload'
+ * Takes the file object uploaded by the user and creates a temporary local URL with it
+ * TODO: Store the file permanently
+ */
 handleUpload(event) {
   this.setState({
     file: URL.createObjectURL(event.target.files[0])

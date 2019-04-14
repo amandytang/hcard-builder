@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './form.scss';
 
 class Form extends Component {
@@ -12,17 +13,27 @@ class Form extends Component {
   this.handleUpload = this.handleUpload.bind(this);
 }
 
+/**
+ * @description handler to be called when user makes an input in the form
+ */
 handleChange(event) {
   if (this.props.handleChange) {
     this.props.handleChange(event);
   };
 }
 
+/**
+ * @description handler to be called when user submits the form
+ * TODO: Validate the user's input and save the hCard
+ */
 handleSubmit(event) {
-  alert('A name was submitted: ' + this.state.value);
+  alert('Creating your hCard...');
   event.preventDefault();
 }
 
+/**
+ * @description handler to be called when user clicks 'Upload'
+ */
 handleUpload(event) {
   if (this.props.handleUpload) {
     this.props.handleUpload(event);
@@ -36,46 +47,46 @@ handleUpload(event) {
           <legend>Personal Details</legend>
           <label>
             Given Name
-            <input type="text" name="givenName" value={this.state.givenName} onChange={this.handleChange} />
+            <input type="text" required name="givenName" value={this.state.givenName} onChange={this.handleChange} />
           </label>
           <label>
             Surname
-            <input type="text" name="surname" value={this.state.surname} onChange={this.handleChange} />
+            <input type="text" required name="surname" value={this.state.surname} onChange={this.handleChange} />
           </label>
           <label>
             Email
-            <input type="text" name="email" value={this.state.email} onChange={this.handleChange} />
+            <input type="text" required name="email" value={this.state.email} onChange={this.handleChange} />
           </label>
           <label>
             Phone
-            <input type="text" name="phone" value={this.state.phone} onChange={this.handleChange} />
+            <input type="tel" required name="phone" value={this.state.phone} onChange={this.handleChange} />
           </label>
         </fieldset>
         <fieldset>
           <legend>Address</legend>
           <label>
             House Name or #
-            <input type="text" name="houseName" value={this.state.houseName} onChange={this.handleChange} />
+            <input type="text" required name="houseName" value={this.state.houseName} onChange={this.handleChange} />
           </label>
           <label>
             Street
-            <input type="text" name="street" value={this.state.street} onChange={this.handleChange} />
+            <input type="text" required name="street" value={this.state.street} onChange={this.handleChange} />
           </label>
           <label>
             Suburb
-            <input type="text" name="suburb" value={this.state.suburb} onChange={this.handleChange} />
+            <input type="text" required name="suburb" value={this.state.suburb} onChange={this.handleChange} />
           </label>
           <label>
             State
-            <input type="text" name="state" value={this.state.state} onChange={this.handleChange} />
+            <input type="text" required name="state" value={this.state.state} onChange={this.handleChange} />
           </label>
           <label>
             Post Code
-            <input type="text" name="postCode" value={this.state.postCode} onChange={this.handleChange} />
+            <input type="number" required name="postCode" value={this.state.postCode} onChange={this.handleChange} />
           </label>
           <label>
             Country
-            <input type="text" name="country" value={this.state.country} onChange={this.handleChange} />
+            <input type="text" required name="country" value={this.state.country} onChange={this.handleChange} />
           </label>
         </fieldset>
         <div className="form__button-container">
@@ -89,3 +100,8 @@ handleUpload(event) {
 }
 
 export default Form;
+
+Form.propTypes = {
+  handleUpload: PropTypes.func,
+  handleChange: PropTypes.func,
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './card-preview.scss';
 import placeholderAvatar from '../../avatar.png';
 
@@ -72,4 +73,20 @@ class CardPreview extends Component {
   }
 }
 
+
 export default CardPreview;
+
+CardPreview.propTypes = {
+  givenName: PropTypes.string,
+  surname: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.string,
+  street: PropTypes.string,
+  houseName: PropTypes.string,
+  suburb: PropTypes.string,
+  state: PropTypes.string,
+  postCode: PropTypes.string,
+  country: PropTypes.string,
+  avatar: PropTypes.string,
+  handleChange: PropTypes.func,
+}
