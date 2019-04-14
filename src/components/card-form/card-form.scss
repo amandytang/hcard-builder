@@ -1,11 +1,11 @@
-.card-builder {
+.card-form {
   width: 50%;
   background-color: #fff;
   padding: 2.5em;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-.card-builder__title {
+.card-form__title {
   color: #2c3e50;
   font-weight: 800;
   font-size: 2em;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 760px) {
-  .card-builder  {
+  .card-form  {
     width: 100%;
   }
 }

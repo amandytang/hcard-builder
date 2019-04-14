@@ -12,9 +12,9 @@ class Form extends Component {
 }
 
 handleChange(event) {
-  if (event.target) {
-    this.setState({[event.target.name]: event.target.value});
-  }
+  if (this.props.handleChange) {
+    this.props.handleChange(event);
+  };
 }
 
 handleSubmit(event) {
