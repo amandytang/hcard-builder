@@ -1,0 +1,27 @@
+.form {
+  width: 100%;
+  // background-color: #fff;
+  display: block;
+
+}
+
+.form__header {
+  border-bottom: 1px solid #b0b8bc;
+  padding-bottom: 0.3em;
+  color: #b0b8bc;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+.form label {
+  text-transform: uppercase;
+  width: 50%;
+  display: inline-block;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+}

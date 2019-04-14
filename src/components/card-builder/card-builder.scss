@@ -1,11 +1,15 @@
 .card-builder {
-  text-align: center;
   width: 50%;
   background-color: #fff;
+  padding: 2.5em;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
-.card-builder__content {
-  text-align: center;
+.card-builder__title {
+  color: #2c3e50;
+  font-weight: 800;
+  font-size: 2em;
+  padding-bottom: 0.8em;
 }
 
 @media screen and (max-width: 760px) {
