@@ -47,6 +47,11 @@
   padding: 0.5em;
 }
 
+.form__button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .uploadButton {
 	width: 0.1px;
 	height: 0.1px;
@@ -54,18 +59,32 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
-  width: 50%;
+  display:inline-block;
+  padding-right: 0.5em;
 }
 
 .uploadButton + label {
+  width: 50%;
   font-size: 1.25em;
-  font-weight: 700;
   color: white;
+  display:inline-block;
   background-color: #627b8b;
-  display: inline-block;
   border-radius: 0.25em;
+  padding: 0.5em;
+  margin: 1em 0.4em 1em 0em;
+  text-align: center;
+  text-transform: none;
+  box-shadow: 0 0.2em 0 #3f515d;
 }
 
-#submitButton {
-  width: 50% !important;
+input[type=submit] {
+  width: 50%;
+  font-size: 1.25em;
+  display: inline-block;
+  color: white;
+  border: none;
+  margin: 1em 0em 1em 0.4em;
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #3498db;
+  box-shadow: 0 0.2em 0 #2980b9;
 }

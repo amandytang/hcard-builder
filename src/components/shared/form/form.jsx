@@ -79,10 +79,11 @@ handleUpload(event) {
             <input type="text" name="country" value={this.state.country} onChange={this.handleChange} />
           </label>
         </fieldset>
-        <input type="file" name="file" id="file" className="uploadButton" onChange={this.handleUpload} />
-        <label for="file">Upload Avatar</label>
-        <input type="submit" className="submitButton" value="Create hCard" />
-        <img src={this.state.file}/>
+        <div className="form__button-container">
+          <input type="file" name="file" id="file" className="uploadButton" onChange={this.handleUpload} />
+          <label for="file">Upload Avatar</label>
+          <input type="submit" className="submitButton" value="Create hCard" />
+      </div>
       </form>
     );
   }
