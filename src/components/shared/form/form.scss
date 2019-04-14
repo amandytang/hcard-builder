@@ -1,27 +1,71 @@
 .form {
   width: 100%;
-  // background-color: #fff;
   display: block;
-
 }
 
-.form__header {
+.form label {
+  color: #2c3e50;
+  text-transform: uppercase;
+  width: 50%;
+  display: inline-block;
+  padding-bottom: 0.75em;
+}
+
+.form fieldset {
+  border: 0;
+}
+
+.form legend {
+  width: 100%;
   border-bottom: 1px solid #b0b8bc;
+  padding-top: 2.2em;
   padding-bottom: 0.3em;
   color: #b0b8bc;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
   margin-bottom: 1.5em;
+  cursor: default;
 }
 
-.form label {
-  text-transform: uppercase;
-  width: 50%;
-  display: inline-block;
+.form label:nth-child(odd) {
+  padding-left: 0.5em;
+}
+
+.form label:nth-child(even) {
+  padding-right: 0.5em;
 }
 
 .form input {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
   display: block;
   width: 100%;
+  margin-top: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid #b0b8bc;
+  padding: 0.5em;
+}
+
+.uploadButton {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+  width: 50%;
+}
+
+.uploadButton + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #627b8b;
+  display: inline-block;
+  border-radius: 0.25em;
+}
+
+#submitButton {
+  width: 50% !important;
 }

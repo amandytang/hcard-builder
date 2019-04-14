@@ -34,6 +34,7 @@ handleChange(event) {
           street={this.state.street}
           suburb={this.state.suburb}
           postCode={this.state.postCode}
+          state={this.state.state}
           country={this.state.country}
         />
       </div>
