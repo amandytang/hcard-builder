@@ -16,6 +16,9 @@
     color: #fff;
     font-size: 2em;
     min-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -40,7 +43,27 @@
   z-index: -1;
 }
 
-.u-email, .p-tel, .p-street-address, .p-locality, .p-postal-code, .p-country-name {
+.card-preview__avatar {
+  position:absolute;
+  width: 6em;
+  height: 8em;
+  border-bottom: 2px solid #b3b3b3;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  background: #fff;
+  margin-top: -11.25em;
+  right: 5em;
+}
+
+.u-photo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.card-preview__row {
   padding-top: 1.4em;
   border-bottom: 1px solid #dbe0e2;
   font-family: 'Merriweather Sans', sans-serif;
@@ -49,18 +72,57 @@
   color: #34495e;
   min-height: 3em;
   vertical-align: baseline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-preview__row_two {
+  padding-top: 1.4em;
+  border-bottom: 1px solid #dbe0e2;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #34495e;
+  min-height: 3em;
+  display:block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.left {
+  display:inline-block;
+  width: 50%;
+}
+
+.half {
+  width: 50%;
+  display: inline-block;
 }
 
 .label {
-  min-width: 20%;
-  float: left;
+  display:inline-block;
+  min-width: 6em;
+}
+
+.label__right-align {
+  margin-left: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p-locality {
+  margin-left: 0.25em;
 }
 
 .formOutput {
   font-family: 'Merriweather', serif;
   font-size: 1.4em;
   text-transform: none;
-  padding-left: 2em;
+  padding-left: 0.5em;
 }
 
 .h-card {

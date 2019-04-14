@@ -7,11 +7,18 @@ class CardForm extends Component {
   super(props);
 
   this.handleChange = this.handleChange.bind(this);
+  this.handleUpload = this.handleUpload.bind(this);
 }
 
   handleChange(event) {
     if (this.props.handleChange) {
       this.props.handleChange(event);
+    };
+  }
+
+  handleUpload(event) {
+    if (this.props.handleUpload) {
+      this.props.handleUpload(event);
     };
   }
 
@@ -21,6 +28,7 @@ class CardForm extends Component {
         <div className="card-form__title">hCard Builder</div>
         <Form
           handleChange={this.handleChange}
+          handleUpload={this.handleUpload}
         />
       </div>
     );

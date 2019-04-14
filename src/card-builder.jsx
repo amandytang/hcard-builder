@@ -7,10 +7,11 @@ class CardBuilder extends Component {
   constructor(props) {
   super(props);
   this.state = {
-
+    file: null,
   };
 
   this.handleChange = this.handleChange.bind(this);
+  this.handleUpload = this.handleUpload.bind(this);
 }
 
 handleChange(event) {
@@ -19,11 +20,18 @@ handleChange(event) {
   }
 }
 
+handleUpload(event) {
+  this.setState({
+    file: URL.createObjectURL(event.target.files[0])
+  });
+}
+
   render() {
     return (
       <div className="card-builder">
         <CardForm
           handleChange={this.handleChange}
+          handleUpload={this.handleUpload}
         />
         <CardPreview
           givenName={this.state.givenName}
@@ -36,6 +44,7 @@ handleChange(event) {
           postCode={this.state.postCode}
           state={this.state.state}
           country={this.state.country}
+          avatar={this.state.file}
         />
       </div>
     );

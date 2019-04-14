@@ -5,7 +5,6 @@ class Form extends Component {
   constructor(props) {
   super(props);
   this.state = {
-    file: null,
   };
 
   this.handleChange = this.handleChange.bind(this);
@@ -25,9 +24,9 @@ handleSubmit(event) {
 }
 
 handleUpload(event) {
-  this.setState({
-    file: URL.createObjectURL(event.target.files[0])
-  });
+  if (this.props.handleUpload) {
+    this.props.handleUpload(event);
+  };
 }
 
   render() {
@@ -81,7 +80,7 @@ handleUpload(event) {
         </fieldset>
         <div className="form__button-container">
           <input type="file" name="file" id="file" className="uploadButton" onChange={this.handleUpload} />
-          <label for="file">Upload Avatar</label>
+          <label htmlFor="file">Upload Avatar</label>
           <input type="submit" className="submitButton" value="Create hCard" />
       </div>
       </form>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './card-preview.scss';
+import placeholderAvatar from '../../avatar.png';
 
 class CardPreview extends Component {
   constructor(props) {
@@ -23,8 +24,12 @@ class CardPreview extends Component {
     return streetAddress;
   };
 
-  render() {
+  generateAvatarImage() {
+    const avatar = this.props.avatar ? this.props.avatar : placeholderAvatar;
+    return avatar;
+  }
 
+  render() {
 
     return (
       <div className="card-preview">
@@ -35,22 +40,30 @@ class CardPreview extends Component {
           <div className="card-preview__card-frame">
             <div className="card-preview__color-block"/>
             <div className="h-card">
-              <div className="p-name">{this.generateFullName()}</div>
-              <div className="u-email">
-                <span className="label">Email</span> <span className="formOutput"> {this.props.email}</span>
+              <div className="card-preview__avatar">
+                <img className="u-photo" src={this.generateAvatarImage()} alt="userAvatar"/>
               </div>
-              <div className="p-tel">
+              <div className="p-name">{this.generateFullName()}</div>
+              <div className="card-preview__row">
+                <span className="label">Email</span> <span className="formOutput u-email"> {this.props.email}</span>
+              </div>
+              <div className="card-preview__row">
                 <span className="label">Phone</span> <span className="formOutput"> {this.props.phone}</span>
               </div>
-              <div className="p-street-address">
-                <span className="label">Address</span> <span className="formOutput">{this.generateStreetAddress()}</span>
+              <div className="card-preview__row">
+                <span className="label">Address</span> <span className="formOutput p-street-address">{this.generateStreetAddress()}</span>
               </div>
-              <div className="p-locality">
-                <span className="label"> </span><span className="formOutput">{this.props.suburb} <span className="p-region">{this.props.state}</span></span>
+              <div className="card-preview__row">
+                <span className="label"> </span><span className="formOutput p-locality">{this.props.suburb} <span className="p-region">{this.props.state}</span></span>
               </div>
-              <div className="p-postal-code">
-                <span className="label">Post Code</span> <span className="formOutput">{this.props.postCode}</span> <span className="label"><span className="p-country-name">Country</span><span className="formOutput"> {this.props.country}</span></span>
+              <div className="card-preview__row left half">
+                <span className="label">Post Code</span> <span className="formOutput p-postal-code">{this.props.postCode}</span>
               </div>
+              <div className="card-preview__row half">
+                <span className="label">Country</span>
+                <span className="formOutput p-country-name">{this.props.country}</span>
+              </div>
+
             </div>
           </div>
         </div>
