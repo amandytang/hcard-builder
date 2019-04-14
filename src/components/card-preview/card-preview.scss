@@ -4,6 +4,31 @@
   background-color: #e1e4e7;
 }
 
+.card-preview__content {
+  margin: 7em 3.5em 7em 3.5em;
+}
+
+.card-preview__title {
+  color: #b0b8bc;
+  font-size: 1.2em;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+  padding-bottom: 0.5em;
+}
+
+.card-preview__card-frame {
+  background: #fff;
+  height: 25em;
+  border-bottom: 3px solid #9a9a9a;
+}
+
+.card-preview__color-block {
+  background: #2c3e50;
+  height: 8em;
+  z-index: -1;
+}
+
 @media screen and (max-width: 760px) {
   .card-preview  {
     width: 100%;
