@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './card-preview.scss';
-import placeholderAvatar from '../../avatar.png';
+import placeholderAvatar from '../../assets/avatar.png';
 
 class CardPreview extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class CardPreview extends Component {
                 <span className="label">Address</span> <span className="formOutput p-street-address">{this.generateStreetAddress()}</span>
               </div>
               <div className="card-preview__row">
-                <span className="label"> </span><span className="formOutput p-locality">{this.props.suburb} <span className="p-region">{this.props.state}</span></span>
+                <span className="label"> </span><span className="formOutput p-locality">{this.props.suburb}</span> <span className="formOutput p-region">{this.props.state}</span>
               </div>
               <div className="card-preview__row left half">
                 <span className="label">Post Code</span> <span className="formOutput p-postal-code">{this.props.postCode}</span>

@@ -93,7 +93,7 @@ handleUpload(event) {
           <input type="file" name="file" id="file" className="uploadButton" onChange={this.handleUpload} />
           <label htmlFor="file">Upload Avatar</label>
           <input type="submit" className="submitButton" value="Create hCard" />
-      </div>
+        </div>
       </form>
     );
   }
