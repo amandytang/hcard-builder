@@ -77,21 +77,6 @@
   text-overflow: ellipsis;
 }
 
-.card-preview__row_two {
-  padding-top: 1.4em;
-  border-bottom: 1px solid #dbe0e2;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: #34495e;
-  min-height: 3em;
-  display:block;
-  vertical-align: baseline;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .left {
   display:inline-block;
   width: 50%;
@@ -105,13 +90,6 @@
 .label {
   display:inline-block;
   min-width: 6em;
-}
-
-.label__right-align {
-  margin-left: 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .p-locality {
