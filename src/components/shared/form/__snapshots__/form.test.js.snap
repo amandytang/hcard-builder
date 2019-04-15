@@ -1,0 +1,1466 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generates expected snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <fieldset>
+          <legend>
+            Personal Details
+          </legend>
+          <label>
+            Given Name
+            <input
+              name="givenName"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Surname
+            <input
+              name="surname"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Email
+            <input
+              name="email"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Phone
+            <input
+              name="phone"
+              onChange={[Function]}
+              required={true}
+              type="tel"
+            />
+          </label>
+        </fieldset>,
+        <fieldset>
+          <legend>
+            Address
+          </legend>
+          <label>
+            House Name or #
+            <input
+              name="houseName"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Street
+            <input
+              name="street"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Suburb
+            <input
+              name="suburb"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            State
+            <input
+              name="state"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+          <label>
+            Post Code
+            <input
+              name="postCode"
+              onChange={[Function]}
+              required={true}
+              type="number"
+            />
+          </label>
+          <label>
+            Country
+            <input
+              name="country"
+              onChange={[Function]}
+              required={true}
+              type="text"
+            />
+          </label>
+        </fieldset>,
+        <div
+          className="form__button-container"
+        >
+          <input
+            className="uploadButton"
+            id="file"
+            name="file"
+            onChange={[Function]}
+            type="file"
+          />
+          <label
+            htmlFor="file"
+          >
+            Upload Avatar
+          </label>
+          <input
+            className="submitButton"
+            type="submit"
+            value="Create hCard"
+          />
+        </div>,
+      ],
+      "className": "form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <legend>
+              Personal Details
+            </legend>,
+            <label>
+              Given Name
+              <input
+                name="givenName"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Surname
+              <input
+                name="surname"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Email
+              <input
+                name="email"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Phone
+              <input
+                name="phone"
+                onChange={[Function]}
+                required={true}
+                type="tel"
+              />
+            </label>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Personal Details",
+            },
+            "ref": null,
+            "rendered": "Personal Details",
+            "type": "legend",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Given Name",
+                <input
+                  name="givenName"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Given Name",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "givenName",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Surname",
+                <input
+                  name="surname"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Surname",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "surname",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Email",
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Email",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "email",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Phone",
+                <input
+                  name="phone"
+                  onChange={[Function]}
+                  required={true}
+                  type="tel"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Phone",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "phone",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "tel",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "fieldset",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <legend>
+              Address
+            </legend>,
+            <label>
+              House Name or #
+              <input
+                name="houseName"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Street
+              <input
+                name="street"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Suburb
+              <input
+                name="suburb"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              State
+              <input
+                name="state"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+            <label>
+              Post Code
+              <input
+                name="postCode"
+                onChange={[Function]}
+                required={true}
+                type="number"
+              />
+            </label>,
+            <label>
+              Country
+              <input
+                name="country"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Address",
+            },
+            "ref": null,
+            "rendered": "Address",
+            "type": "legend",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "House Name or #",
+                <input
+                  name="houseName"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "House Name or #",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "houseName",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Street",
+                <input
+                  name="street"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Street",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "street",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Suburb",
+                <input
+                  name="suburb"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Suburb",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "suburb",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "State",
+                <input
+                  name="state"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "State",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "state",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Post Code",
+                <input
+                  name="postCode"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Post Code",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "postCode",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "number",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Country",
+                <input
+                  name="country"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Country",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "country",
+                  "onChange": [Function],
+                  "required": true,
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "fieldset",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className="uploadButton"
+              id="file"
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />,
+            <label
+              htmlFor="file"
+            >
+              Upload Avatar
+            </label>,
+            <input
+              className="submitButton"
+              type="submit"
+              value="Create hCard"
+            />,
+          ],
+          "className": "form__button-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "uploadButton",
+              "id": "file",
+              "name": "file",
+              "onChange": [Function],
+              "type": "file",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Upload Avatar",
+              "htmlFor": "file",
+            },
+            "ref": null,
+            "rendered": "Upload Avatar",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "submitButton",
+              "type": "submit",
+              "value": "Create hCard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <fieldset>
+            <legend>
+              Personal Details
+            </legend>
+            <label>
+              Given Name
+              <input
+                name="givenName"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Surname
+              <input
+                name="surname"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Email
+              <input
+                name="email"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Phone
+              <input
+                name="phone"
+                onChange={[Function]}
+                required={true}
+                type="tel"
+              />
+            </label>
+          </fieldset>,
+          <fieldset>
+            <legend>
+              Address
+            </legend>
+            <label>
+              House Name or #
+              <input
+                name="houseName"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Street
+              <input
+                name="street"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Suburb
+              <input
+                name="suburb"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              State
+              <input
+                name="state"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              Post Code
+              <input
+                name="postCode"
+                onChange={[Function]}
+                required={true}
+                type="number"
+              />
+            </label>
+            <label>
+              Country
+              <input
+                name="country"
+                onChange={[Function]}
+                required={true}
+                type="text"
+              />
+            </label>
+          </fieldset>,
+          <div
+            className="form__button-container"
+          >
+            <input
+              className="uploadButton"
+              id="file"
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <label
+              htmlFor="file"
+            >
+              Upload Avatar
+            </label>
+            <input
+              className="submitButton"
+              type="submit"
+              value="Create hCard"
+            />
+          </div>,
+        ],
+        "className": "form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <legend>
+                Personal Details
+              </legend>,
+              <label>
+                Given Name
+                <input
+                  name="givenName"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Surname
+                <input
+                  name="surname"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Email
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Phone
+                <input
+                  name="phone"
+                  onChange={[Function]}
+                  required={true}
+                  type="tel"
+                />
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Personal Details",
+              },
+              "ref": null,
+              "rendered": "Personal Details",
+              "type": "legend",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Given Name",
+                  <input
+                    name="givenName"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Given Name",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "givenName",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Surname",
+                  <input
+                    name="surname"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Surname",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "surname",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Email",
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Email",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "email",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Phone",
+                  <input
+                    name="phone"
+                    onChange={[Function]}
+                    required={true}
+                    type="tel"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Phone",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "phone",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "tel",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "fieldset",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <legend>
+                Address
+              </legend>,
+              <label>
+                House Name or #
+                <input
+                  name="houseName"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Street
+                <input
+                  name="street"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Suburb
+                <input
+                  name="suburb"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                State
+                <input
+                  name="state"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+              <label>
+                Post Code
+                <input
+                  name="postCode"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                />
+              </label>,
+              <label>
+                Country
+                <input
+                  name="country"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Address",
+              },
+              "ref": null,
+              "rendered": "Address",
+              "type": "legend",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "House Name or #",
+                  <input
+                    name="houseName"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "House Name or #",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "houseName",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Street",
+                  <input
+                    name="street"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Street",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "street",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Suburb",
+                  <input
+                    name="suburb"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Suburb",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "suburb",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "State",
+                  <input
+                    name="state"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "State",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "state",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Post Code",
+                  <input
+                    name="postCode"
+                    onChange={[Function]}
+                    required={true}
+                    type="number"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Post Code",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "postCode",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "number",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Country",
+                  <input
+                    name="country"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Country",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "country",
+                    "onChange": [Function],
+                    "required": true,
+                    "type": "text",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "label",
+            },
+          ],
+          "type": "fieldset",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                className="uploadButton"
+                id="file"
+                name="file"
+                onChange={[Function]}
+                type="file"
+              />,
+              <label
+                htmlFor="file"
+              >
+                Upload Avatar
+              </label>,
+              <input
+                className="submitButton"
+                type="submit"
+                value="Create hCard"
+              />,
+            ],
+            "className": "form__button-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "uploadButton",
+                "id": "file",
+                "name": "file",
+                "onChange": [Function],
+                "type": "file",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Upload Avatar",
+                "htmlFor": "file",
+              },
+              "ref": null,
+              "rendered": "Upload Avatar",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "submitButton",
+                "type": "submit",
+                "value": "Create hCard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
