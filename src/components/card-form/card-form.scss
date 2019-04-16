@@ -1,12 +1,14 @@
+@import "../../assets/master.scss";
+
 .card-form {
   width: 50%;
-  background-color: #fff;
+  background-color: $white;
   padding: 2.5em;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: $primary-font;
 }
 
 .card-form__title {
-  color: #2c3e50;
+  color: $old-navy;
   font-weight: 800;
   font-size: 2em;
 }

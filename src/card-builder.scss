@@ -1,11 +1,14 @@
+@import "assets/master.scss";
+
 .card-builder {
-  display: flex;
+  @include flex;
+
   height: 100%;
   background-color: #e1e4e7;
 }
 
 @media screen and (max-width: 760px) {
   .card-builder {
-    flex-direction: column;
+    @include flex-column;
   }
 }

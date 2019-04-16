@@ -1,13 +1,17 @@
+@import "../../../assets/master.scss";
+
 .form {
+  @include block;
+
   width: 100%;
-  display: block;
 }
 
 .form label {
-  color: #2c3e50;
+  @include inline-block;
+
+  color: $old-navy;
   text-transform: uppercase;
   width: 50%;
-  display: inline-block;
   padding-bottom: 0.75em;
 }
 
@@ -16,16 +20,17 @@
 }
 
 .form legend {
+  @include cursor-default;
+
   width: 100%;
-  border-bottom: 1px solid #b0b8bc;
+  border-bottom: 1px solid $grey;
   padding-top: 2.2em;
   padding-bottom: 0.3em;
-  color: #b0b8bc;
+  color: $grey;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
   margin-bottom: 1.5em;
-  cursor: default;
 }
 
 .form label:nth-child(odd) {
@@ -37,37 +42,38 @@
 }
 
 .form input {
-  font-family: 'Merriweather', serif;
+  @include block;
+  font-family: $secondary-font;
   font-size: 1.2em;
-  display: block;
   width: 100%;
   margin-top: 0.5em;
   border-radius: 0.25em;
-  border: 1px solid #b0b8bc;
+  border: 1px solid $grey;
   padding: 0.5em;
 }
 
 .form__button-container {
-  display: flex;
+  @include flex;
   justify-content: space-between;
 }
 
 .uploadButton {
+  @include inline-block;
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
-  display:inline-block;
   padding-right: 0.5em;
 }
 
 .uploadButton + label {
+  @include inline-block;
+
   width: 50%;
   font-size: 1.25em;
   color: white;
-  display:inline-block;
   background-color: #627b8b;
   border-radius: 0.25em;
   padding: 0.5em;
@@ -78,13 +84,15 @@
 }
 
 input[type=submit] {
+  @include inline-block;
+
   width: 50%;
   font-size: 1.25em;
-  display: inline-block;
   color: white;
   border: none;
   margin: 1em 0em 1em 0.4em;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: $primary-font;
   background-color: #3498db;
   box-shadow: 0 0.2em 0 #2980b9;
 }
+

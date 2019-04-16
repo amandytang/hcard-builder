@@ -1,0 +1,27 @@
+/**
+ * Colors
+ */
+$white: #ffffff;
+$grey: #b0b8bc;
+$old-navy: #2c3e50;
+
+/**
+ * Fonts
+ */
+$primary-font: 'Merriweather Sans', sans-serif;
+$secondary-font: 'Merriweather', serif;
+
+/**
+ * Mouse cursors
+ */
+@mixin cursor-default { cursor: default; }
+
+/**
+ * Layout
+ */
+@mixin flex { display: flex; }
+@mixin flex-column { flex-direction: column; }
+
+@mixin block { display: block; }
+@mixin inline-block { display: inline-block; }
+

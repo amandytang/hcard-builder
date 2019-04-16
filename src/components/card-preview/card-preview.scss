@@ -1,9 +1,12 @@
+@import "../../assets/master.scss";
+
 .card-preview {
+  @include cursor-default;
+
   width: 50%;
   height: 100%;
   background-color: #e1e4e7;
-  font-family: 'Merriweather', serif;
-  cursor: default;
+  font-family: $secondary-font;
 }
 
 .card-preview__content {
@@ -13,7 +16,7 @@
 .card-preview {
   .p-name {
     margin-top: -4em;
-    color: #fff;
+    color: $white;
     font-size: 2em;
     min-height: 2em;
     white-space: nowrap;
@@ -23,8 +26,8 @@
 }
 
 .card-preview__title {
-  font-family: 'Merriweather Sans', sans-serif;
-  color: #b0b8bc;
+  font-family: $primary-font;
+  color: $grey;
   font-size: 1.2em;
   text-align: right;
   text-transform: uppercase;
@@ -32,13 +35,13 @@
 }
 
 .card-preview__card-frame {
-  background: #fff;
+  background: $white;
   height: 25em;
   border-bottom: 3px solid #9a9a9a;
 }
 
 .card-preview__color-block {
-  background: #2c3e50;
+  background: $old-navy;
   height: 8em;
   z-index: -1;
 }
@@ -47,16 +50,17 @@
   position:absolute;
   width: 6em;
   height: 8em;
-  border-bottom: 2px solid #b3b3b3;
-  border-left: 1px solid #b3b3b3;
-  border-right: 1px solid #b3b3b3;
-  background: #fff;
+  border-bottom: 2px solid $grey;
+  border-left: 1px solid $grey;
+  border-right: 1px solid $grey;
+  background: $white;
   margin-top: -11.25em;
   right: 5em;
 }
 
 .u-photo {
-  display: block;
+  @include block;
+
   max-width: 100%;
   max-height: 100%;
   width: 100%;
@@ -66,7 +70,7 @@
 .card-preview__row {
   padding-top: 1.4em;
   border-bottom: 1px solid #dbe0e2;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: $primary-font;
   text-transform: uppercase;
   font-size: 0.8em;
   color: #34495e;
@@ -77,18 +81,14 @@
   text-overflow: ellipsis;
 }
 
-.left {
-  display:inline-block;
-  width: 50%;
-}
+.left, .half {
+  @include inline-block;
 
-.half {
   width: 50%;
-  display: inline-block;
 }
 
 .label {
-  display:inline-block;
+  @include inline-block;
   min-width: 6em;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .formOutput {
-  font-family: 'Merriweather', serif;
+  font-family: $secondary-font;
   font-size: 1.4em;
   text-transform: none;
   padding-left: 0.5em;
