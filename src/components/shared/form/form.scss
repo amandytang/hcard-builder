@@ -43,6 +43,7 @@
 
 .form input {
   @include block;
+
   font-family: $secondary-font;
   font-size: 1.2em;
   width: 100%;
@@ -54,11 +55,13 @@
 
 .form__button-container {
   @include flex;
+
   justify-content: space-between;
 }
 
 .uploadButton {
   @include inline-block;
+
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
