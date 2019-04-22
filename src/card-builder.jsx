@@ -16,6 +16,7 @@ class CardBuilder extends Component {
 
   this.handleChange = this.handleChange.bind(this);
   this.handleUpload = this.handleUpload.bind(this);
+  this.handleDrop = this.handleDrop.bind(this);
 }
 
 /**
@@ -38,6 +39,15 @@ handleUpload(event) {
   });
 }
 
+/**
+ * @description handler to be called when user uploads a file using drag and drop
+ */
+handleDrop(file) {
+  this.setState({
+    file: URL.createObjectURL(file)
+  });
+}
+
   render() {
     return (
       <div className="card-builder">
@@ -57,6 +67,7 @@ handleUpload(event) {
           state={this.state.state}
           country={this.state.country}
           avatar={this.state.file}
+          handleDrop={this.handleDrop}
         />
       </div>
     );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './card-preview.scss';
 import placeholderAvatar from '../../assets/avatar.png';
+import Dropzone from 'react-dropzone';
 
 class CardPreview extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class CardPreview extends Component {
 
   this.generateFullName = this.generateFullName.bind(this);
   this.generateStreetAddress = this.generateStreetAddress.bind(this);
+  this.handleDrop = this.handleDrop.bind(this);
 }
 
   generateFullName() {
@@ -30,6 +32,10 @@ class CardPreview extends Component {
     return avatar;
   }
 
+  handleDrop(file) {
+    if (this.props.handleDrop) this.props.handleDrop(file[0]);
+  }
+
   render() {
 
     return (
@@ -42,7 +48,17 @@ class CardPreview extends Component {
             <div className="card-preview__color-block"/>
             <div className="h-card">
               <div className="card-preview__avatar">
-                <img className="u-photo" src={this.generateAvatarImage()} alt="userAvatar"/>
+              <Dropzone onDrop={file => this.handleDrop(file)}>
+                {({getRootProps, getInputProps}) => (
+                  <section>
+                    <div {...getRootProps()}>
+                      <input {...getInputProps()} />
+                      <img className="u-photo" src={this.generateAvatarImage()} alt="userAvatar"/>
+                    </div>
+                  </section>
+                )}
+              </Dropzone>
+
               </div>
               <div className="p-name">{this.generateFullName()}</div>
               <div className="card-preview__row">
