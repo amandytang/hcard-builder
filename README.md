@@ -8,6 +8,7 @@ organisations on the web](http://microformats.org/wiki/h-card).
 * As the form is filled out, the preview live-updates in the hCard format
 * Minimal form validation (required fields, post code must be a number) before form can be submitted
 * When the user selects an image to upload an avatar, a thumbnail is shown in the preview
+* User can also upload an avatar via drag and drop into the image preview
 * The submit button does not function (doesn't try to POST and currently alerts "Creating hCard...")
 * Responsive for different screen widths
 * Works in the latest version of the Chrome browser
@@ -17,6 +18,7 @@ organisations on the web](http://microformats.org/wiki/h-card).
 * Uses [SASS](https://sass-lang.com/) (CSS Preprocessor) for styling
 * Unit tests using Sinon, Jest and Enzyme
 * h-card format (MF2)
+* [React-Dropzone](https://github.com/react-dropzone/react-dropzone)
 
 ## Other Comments/TODO
 
