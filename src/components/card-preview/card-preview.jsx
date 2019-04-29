@@ -32,6 +32,9 @@ class CardPreview extends Component {
     return avatar;
   }
 
+  /**
+  * @description handler to be called when user uploads a file using drag and drop
+  */
   handleDrop(file) {
     if (this.props.handleDrop) this.props.handleDrop(file[0]);
   }
